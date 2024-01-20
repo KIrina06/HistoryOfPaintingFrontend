@@ -3,8 +3,8 @@ import {
     PaintingsResult,
     GetFilteredPaintings
 } from '../modules/GetPaintings.js';
-import SearchPaintings from './Search.tsx';
-import PaintingCard from './PaintingCard.tsx';
+import SearchPaintings from '../components/Search.tsx';
+import PaintingCard from '../components/PaintingCard.tsx';
 
 
 function Paintings() {

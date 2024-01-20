@@ -1,5 +1,5 @@
 import mockPaintings from '../assets/MockPaintings';
-import Painting from '../components/PaintingPage';
+import Painting from '../routes/PaintingPage';
 
 export interface Painting {
     id: number;

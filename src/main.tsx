@@ -1,6 +1,6 @@
 import {Route, Routes} from "react-router-dom";
-import Paintings from "./components/PaintingsPage.tsx";
-import Painting from "./components/PaintingPage.tsx";
+import Paintings from "./routes/PaintingsPage.tsx";
+import Painting from "./routes/PaintingPage.tsx";
 import ReactDOM from "react-dom/client";
 import { Navbar } from "./components/NavBar.tsx";
 import BreadCrumbs from "./components/Breadcrumbs.tsx";
@@ -15,8 +15,8 @@ root.render(
     <Navbar />
     <BreadCrumbs />
             <Routes>
-                <Route path="HistoryOfPaintingFrontend/" element={<Paintings/>}/>
-                <Route path="HistoryOfPaintingFrontend/paintings/:id" element={<Painting/>} />
+                <Route path="/" element={<Paintings/>}/>
+                <Route path="paintings/:id" element={<Painting/>} />
             </Routes>
     </Router>
 );
