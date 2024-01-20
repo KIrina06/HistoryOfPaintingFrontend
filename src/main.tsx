@@ -15,7 +15,7 @@ root.render(
     <Navbar />
     <BreadCrumbs />
             <Routes>
-                <Route path="paintings/" element={<Paintings/>}/>
+                <Route path="/" element={<Paintings/>}/>
                 <Route path="paintings/:id" element={<Painting/>} />
             </Routes>
     </Router>
