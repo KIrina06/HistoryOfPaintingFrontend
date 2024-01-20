@@ -8,7 +8,7 @@ export function Navbar(){
             
             <li style={{float:"right"}}><a className="active" href="/request"><BsCartFill /></a></li>
             <li style={{float:"right"}}><a href="/login">Войти</a></li>
-            <li style={{float:"right"}}><a href="/paintings/">Картины</a></li>
+            <li style={{float:"right"}}><a href="/HistoryOfPaintingFrontend/">Картины</a></li>
         </ul>
     )
 }
