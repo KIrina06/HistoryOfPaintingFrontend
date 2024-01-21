@@ -1,0 +1,44 @@
+@import "src/styles/Variables.sass"
+
+.menu-wrapper
+	display: flex
+	gap: 10px
+
+	@media screen and (max-width: 1024px)
+		width: 100%
+		height: 100vh
+		z-index: 1000
+		top: 50px
+		transition: right 0.5s
+		position: fixed
+		flex-direction: column
+		gap: 0
+		right: -100%
+		background: #06266F
+
+		.menu-item
+			width: 100%
+			padding: 30px
+			transition: 0.3s ease
+
+			&:hover
+				background: #06266F
+
+	&.open
+		right: 0
+
+	.menu-item
+		text-decoration: none
+
+		&:hover
+			span
+				color: #1240AB
+
+				@media screen and (max-width: 1024px)
+					color: #4962D6
+		span
+			color: $primary
+			font-size: 20px
+
+			@media screen and (max-width: 1024px)
+				color: #4962D6
